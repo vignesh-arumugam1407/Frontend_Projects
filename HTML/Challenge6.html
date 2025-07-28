@@ -1,0 +1,34 @@
+<!--Positions an image at the boom right corner of a container div using CSS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container {
+    position: absolute; /* Sets the reference for absolute positioning */
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    overflow: hidden;  /*Ensures content doesn't overflow */
+}
+
+.image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+    </style>
+    <script src=""></script>
+</head>
+<body>
+    <div class="container">
+    <img src="20+ Velupillai Prabhakaran Quotes in Tamil - Tamil Kavithai Lyrics-modified-Photoroom.jpg" alt="Prabhakaran" class="image">
+</div>
+
+</body>
+</html>

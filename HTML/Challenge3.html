@@ -1,0 +1,101 @@
+<!--Create the Registration Form-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form>
+        <label>First Name: 
+            <input type="text" maxlength="30" required> (max 30 characters and A-Z) </label><br><br>
+        <label>Last Name: 
+            <input type="text" maxlength="30" required> (max 30 characters and A-Z) </label><br><br>
+        <label>Date of Birth:
+            <input type="date" name="date" value="date"></label><br><br>
+        <label>Email Id : 
+            <input type="email" value="email"></label><br><br>
+        <label> Mobile Number :
+        <input type="tel" name="mobile" pattern="\d{10}" required> ( 10 Digit Number )</label><br><br>
+        <label> Gender : 
+            <input type="radio" name="gender" value="Male">Male </label>
+            <label>
+            <input type="radio" name="gender" value="Female">Female </label><br><br>
+
+        <label> Address : 
+            <input type="textarea"  name="address" style="width: 250px; height: 70px;"></label><br><br>
+        <label> City : 
+            <input type="text"  name="City" value="Enter Your City"> (Max 30 Characters a-z and A-Z)</label><br><br>
+        <label> PinCode : 
+            <input type="number"  name="Pincode"> (6 Digit Number)</label><br><br>
+        <label> State : 
+            <input type="text"  name="State"> (Max 30 Characters a-z and A-Z)</label><br><br>
+        <label> Country : </label>
+        <select>
+            <option value=>Select</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="CANADA">CANADA</option>
+        </select> <br><br>
+        <h3>HOBBIES</h3>
+        <label><input type="checkbox" name="hobbies" value="Drawing"> Drawing</label>
+        <label><input type="checkbox" name="hobbies" value="Singing"> Singing</label>
+        <label><input type="checkbox" name="hobbies" value="Dancing"> Dancing</label>
+        <label><input type="checkbox" name="hobbies" value="Sketching"> Sketching</label>
+        <label><input type="checkbox" name="hobbies" value="Others"> Others</label>
+        <input type="textarea" >
+
+        <h3>QUALIFICATION</h3>
+        <table>
+            <tr>
+                <th>SLNo.</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text" name="boardX" maxlength="10" required></td>
+                <td><input type="number" name="percentageX" required></td>
+                <td><input type="number" name="yearX" required></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text" name="boardXII" maxlength="10" required></td>
+                <td><input type="number" step="0.01" name="percentageXII" required></td>
+                <td><input type="number" name="yearXII" required></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text" name="boardGrad" maxlength="10" required></td>
+                <td><input type="number"  name="percentageGrad" required></td>
+                <td><input type="number" name="yearGrad" required></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text" name="boardMasters" maxlength="10" required></td>
+                <td><input type="number" name="percentageMasters" required></td>
+                <td><input type="number" name="yearMasters" required></td>
+            </tr>
+        </table>
+
+        <h3>COURSES APPLIED FOR</h3>
+        <label><input type="checkbox" name="courses" value="Pinp"> Php</label>
+        <label><input type="checkbox" name="courses" value="Python"> Python</label>
+        <label><input type="checkbox" name="courses" value="Java"> Java</label>
+        <label><input type="checkbox" name="courses" value="Digital Marketing"> Digital Marketing</label>
+
+        <br><br>
+        <button class="btn"> <input type="Submit" value="Submit"></button>
+    </form>
+</body>
+</html>
